@@ -20,3 +20,5 @@ with DAG(
         task_id ="t2_orange",
         bash_command="/opt/airflow/plugins/shell/test_fruit.sh AVOCADO"
     )
+
+    t1_orange >> t12orange
